@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>sphinx-my-extension</title>
+  <meta name="description" content="A clean, minimal link page." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🔗%3C/text%3E%3C/svg%3E">
+  <style>
+    /* ===== Theme ===== */
+    :root {
+      --bg: #f7f7f9;
+      --surface: #ffffff;
+      --text: #111113;
+      --muted: #646b75;
+      --border: #e8e8ef;
+      --accent: #4f46e5; /* indigo */
+      --ring: rgba(79, 70, 229, 0.35);
+      --shadow: 0 1px 1px rgba(0,0,0,0.04), 0 6px 16px rgba(0,0,0,0.06);
+      --radius: 16px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0c0f;
+        --surface: #111319;
+        --text: #e7e9ee;
+        --muted: #a0a7b3;
+        --border: #242a36;
+        --accent: #8b8df8;
+        --ring: rgba(139, 141, 248, 0.35);
+        --shadow: 0 1px 1px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.45);
+      }
+    }
+
+    /* ===== Base ===== */
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans JP", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(79,70,229,0.08), transparent 60%),
+                  radial-gradient(1000px 700px at 120% 10%, rgba(16,185,129,0.07), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 6vh auto 10vh;
+      padding: 0 20px;
+    }
+
+    header {
+      margin-bottom: 26px;
+    }
+    h1 {
+      font-size: clamp(28px, 4vw, 40px);
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    /* ===== Link List ===== */
+    .links {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 720px) {
+      .links { gap: 16px; }
+    }
+
+    .link-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 18px;
+      background: linear-gradient(0deg, rgba(255,255,255,0.02), rgba(255,255,255,0.02)) var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+    }
+    .link-card:hover { transform: translateY(-2px); }
+    .link-card:hover, .link-card:focus-visible {
+      border-color: color-mix(in oklab, var(--accent) 40%, var(--border));
+      box-shadow: 0 0 0 3px var(--ring), var(--shadow);
+      outline: none;
+    }
+
+    .link-title {
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .link-desc {
+      margin-top: 2px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .arrow {
+      width: 22px;
+      height: 22px;
+      opacity: 0.7;
+      transition: transform 160ms ease, opacity 160ms ease;
+    }
+    .link-card:hover .arrow { transform: translateX(2px); opacity: 1; }
+
+    /* ===== Sections (optional) ===== */
+    .section-title {
+      margin: 28px 0 10px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
+    }
+    .tiny { opacity: 0.8; }
+
+    /* ===== Utility ===== */
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>SphinxでスタイリッシュなAPIリファレンスを作る</h1>
+      <p class="subtitle">各段階におけるAPIリファレンスのアーカイブ</p>
+    </header>
+
+    <div class="links">
+      <!-- ▼ ここを複製してリンクを増やす -->
+      <a class="link-card" href="https://tabae.github.io/sphinx-my-extension/pages/sec2_default_setting/#" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="link-title">2. デフォルトの設定でAPIリファレンスを作ってみる</div>
+          <div class="link-desc">pages/sec2_default_setting</div>
+        </div>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div> 
+
+  </main>
+
+  <script>
+    // 年を自動更新
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
