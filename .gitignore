@@ -69,6 +69,7 @@ dmypy.json
 
 # Sphinx documentation
 docs/_build/
+docs/stubs/
 
 # Local env
 .env

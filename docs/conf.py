@@ -5,8 +5,7 @@
 
 import sys
 from pathlib import Path
-path_to_module = Path(__file__).parent.parent.resolve()
-sys.path.insert(0, str(path_to_module))
+sys.path.insert(0, str(Path(__file__).parent.parent.resolve()))
 
 
 # -- Project information -----------------------------------------------------
@@ -20,7 +19,10 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon', 'sphinx.ext.githubpages']
+extensions = ['sphinx.ext.autodoc',
+              'sphinx.ext.napoleon',
+              'sphinx.ext.autosummary',
+              'sphinx.ext.githubpages']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -32,3 +34,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'furo'
 html_static_path = ['_static']
+
+
+# -- Options for autosummary generation ---------------------------------------
+autosummary_generate = True

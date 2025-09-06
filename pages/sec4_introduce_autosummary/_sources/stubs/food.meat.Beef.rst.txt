@@ -1,0 +1,24 @@
+﻿food.meat.Beef
+==============
+
+.. currentmodule:: food.meat
+
+.. autoclass:: Beef
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Beef.__init__
+      ~Beef.cook_steak
+      ~Beef.describe
+   
+   
+
+   
+   
+   

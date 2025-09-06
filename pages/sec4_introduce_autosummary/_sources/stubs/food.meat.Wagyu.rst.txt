@@ -1,0 +1,25 @@
+﻿food.meat.Wagyu
+===============
+
+.. currentmodule:: food.meat
+
+.. autoclass:: Wagyu
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Wagyu.__init__
+      ~Wagyu.cook_steak
+      ~Wagyu.cook_sukiyaki
+      ~Wagyu.describe
+   
+   
+
+   
+   
+   

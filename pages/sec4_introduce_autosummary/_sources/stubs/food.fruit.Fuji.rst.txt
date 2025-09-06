@@ -1,0 +1,25 @@
+﻿food.fruit.Fuji
+===============
+
+.. currentmodule:: food.fruit
+
+.. autoclass:: Fuji
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Fuji.__init__
+      ~Fuji.describe
+      ~Fuji.make_cider
+      ~Fuji.make_pie
+   
+   
+
+   
+   
+   
