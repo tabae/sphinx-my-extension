@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>food.meat package &#8212; My Food Library 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="food.fruit package" href="food.fruit.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="food-meat-package">
+<h1>food.meat package<a class="headerlink" href="#food-meat-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-food.meat.base_meat">
+<span id="food-meat-base-meat-module"></span><h2>food.meat.base_meat module<a class="headerlink" href="#module-food.meat.base_meat" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="food.meat.base_meat.BaseMeat">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">food.meat.base_meat.</span></span><span class="sig-name descname"><span class="pre">BaseMeat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">animal</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#food.meat.base_meat.BaseMeat" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for all meats.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="food.meat.base_meat.BaseMeat.describe">
+<span class="sig-name descname"><span class="pre">describe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#food.meat.base_meat.BaseMeat.describe" title="Link to this definition">¶</a></dt>
+<dd><p>Return a description of the meat.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A description of the meat.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-food.meat.beef">
+<span id="food-meat-beef-module"></span><h2>food.meat.beef module<a class="headerlink" href="#module-food.meat.beef" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="food.meat.beef.Beef">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">food.meat.beef.</span></span><span class="sig-name descname"><span class="pre">Beef</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Beef'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">animal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cow'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#food.meat.beef.Beef" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#food.meat.base_meat.BaseMeat" title="food.meat.base_meat.BaseMeat"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseMeat</span></code></a></p>
+<p>Beef meat class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="food.meat.beef.Beef.cook_steak">
+<span class="sig-name descname"><span class="pre">cook_steak</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'medium'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#food.meat.beef.Beef.cook_steak" title="Link to this definition">¶</a></dt>
+<dd><p>Cook a steak of a given size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size</strong> (<em>str</em>) – The size of the steak. Default is “medium”.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="food.meat.beef.Wagyu">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">food.meat.beef.</span></span><span class="sig-name descname"><span class="pre">Wagyu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Wagyu</span> <span class="pre">Beef'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">animal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cow'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#food.meat.beef.Wagyu" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#food.meat.beef.Beef" title="food.meat.beef.Beef"><code class="xref py py-class docutils literal notranslate"><span class="pre">Beef</span></code></a></p>
+<p>Wagyu beef class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="food.meat.beef.Wagyu.cook_sukiyaki">
+<span class="sig-name descname"><span class="pre">cook_sukiyaki</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'large'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#food.meat.beef.Wagyu.cook_sukiyaki" title="Link to this definition">¶</a></dt>
+<dd><p>Cook sukiyaki of a given size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size</strong> (<em>str</em>) – The size of the sukiyaki. Default is “large”.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-food.meat.pork">
+<span id="food-meat-pork-module"></span><h2>food.meat.pork module<a class="headerlink" href="#module-food.meat.pork" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="food.meat.pork.Pork">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">food.meat.pork.</span></span><span class="sig-name descname"><span class="pre">Pork</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Pork'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">animal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pig'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#food.meat.pork.Pork" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#food.meat.base_meat.BaseMeat" title="food.meat.base_meat.BaseMeat"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseMeat</span></code></a></p>
+<p>Pork meat class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="food.meat.pork.Pork.cook_bacon">
+<span class="sig-name descname"><span class="pre">cook_bacon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'medium'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#food.meat.pork.Pork.cook_bacon" title="Link to this definition">¶</a></dt>
+<dd><p>Cook bacon of a given size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size</strong> (<em>str</em>) – The size of the bacon. Default is “medium”.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-food.meat">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-food.meat" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">My Food Library</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="food.html">food package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="food.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="food.html#module-food">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="food.html">food package</a><ul>
+      <li>Previous: <a href="food.fruit.html" title="previous chapter">food.fruit package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, My Name.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/food.meat.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
