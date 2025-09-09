@@ -1,0 +1,17 @@
+food.meat
+=====================
+
+.. currentmodule:: food.meat
+
+Meat classes
+-----------------------
+
+.. autosummary::
+   :toctree: stubs/
+   :template: class.rst
+
+   Beef
+   Pork
+   Wagyu
+
+
