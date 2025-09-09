@@ -1,0 +1,9 @@
+﻿Wagyu
+===============
+
+.. currentmodule:: food.meat
+
+.. autoclass:: food.meat.Wagyu
+   :members:
+   :undoc-members:
+   :inherited-members:

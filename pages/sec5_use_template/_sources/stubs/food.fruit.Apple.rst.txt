@@ -1,0 +1,9 @@
+﻿Apple
+================
+
+.. currentmodule:: food.fruit
+
+.. autoclass:: food.fruit.Apple
+   :members:
+   :undoc-members:
+   :inherited-members:

@@ -1,0 +1,9 @@
+﻿Beef
+==============
+
+.. currentmodule:: food.meat
+
+.. autoclass:: food.meat.Beef
+   :members:
+   :undoc-members:
+   :inherited-members:
