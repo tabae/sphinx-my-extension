@@ -1,0 +1,38 @@
+API Reference
+======================
+
+.. grid:: 2
+    :gutter: 5
+
+    .. grid-item-card:: Fruit
+
+        .. image:: _static/fruit.png
+            :target: food.fruit
+
+        +++
+
+        .. button-ref:: food.fruit
+            :expand:
+            :color: secondary
+
+            View Fruit Classes
+
+    .. grid-item-card:: Meat
+
+        .. image:: _static/meat.png
+            :target: food.meat
+
+        +++
+
+        .. button-ref:: food.meat
+            :expand:
+            :color: secondary
+
+            View Meat Classes
+
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+
+   food.fruit
+   food.meat

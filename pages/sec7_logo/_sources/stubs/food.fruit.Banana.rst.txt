@@ -1,0 +1,9 @@
+﻿Banana
+=================
+
+.. currentmodule:: food.fruit
+
+.. autoclass:: food.fruit.Banana
+   :members:
+   :undoc-members:
+   :inherited-members:

@@ -1,0 +1,16 @@
+food.fruit
+=====================
+
+.. currentmodule:: food.fruit
+
+Fruit classes
+-----------------------
+
+.. autosummary::
+   :toctree: stubs/
+   :template: class.rst
+
+   Apple
+   Fuji
+   Banana
+

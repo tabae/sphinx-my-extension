@@ -1,0 +1,9 @@
+﻿Fuji
+===============
+
+.. currentmodule:: food.fruit
+
+.. autoclass:: food.fruit.Fuji
+   :members:
+   :undoc-members:
+   :inherited-members:

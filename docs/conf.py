@@ -39,3 +39,7 @@ html_static_path = ['_static']
 
 # -- Options for autosummary generation ---------------------------------------
 autosummary_generate = True
+
+# -- Option for furo theme ------------------------------------------------
+html_logo = "_static/logo.png"
+html_title = "My Food Library"
